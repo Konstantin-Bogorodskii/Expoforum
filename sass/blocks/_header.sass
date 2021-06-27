@@ -1,0 +1,103 @@
+.header
+  background-image: url(../img/header/header-bg.jpg)
+  background-size: cover
+  background-position: center 
+  background-repeat: no-repeat
+  &__hr
+    margin: 0
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 1560px
+    margin: 0 auto
+    padding: 33px 0
+  &-nav
+    display: flex
+    align-items: center
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item:not(:last-child)
+      margin-right: 47px
+    &__link
+      font-size: 16px
+      line-height: 135%
+      color: $light
+  &-buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-width: 172px
+    &__loupe
+      background: transparent
+      border: none
+      outline: none
+    &__globe
+      background: transparent
+      border: none
+      outline: none
+    &__languages
+      font-size: 16px
+      line-height: 135%
+      color: $light
+      margin-left: 11px
+  &-main
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding-top: 184px
+    padding-bottom: 53px
+    color: $light
+  &-description
+    &__title
+      margin-top: 0
+      font-weight: bold
+      font-size: 64px
+      line-height: 160%
+      text-transform: uppercase
+      margin-bottom: 35px
+    &__text
+      margin-top: 0
+      margin-bottom: 25px
+      max-width: 420px
+      font-size: 24px
+      line-height: 140%
+  &-cards
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 540px
+    &--pt-110
+      padding-top: 140px
+  &-card
+    max-width: 255px
+    padding: 30px 0 30px 40px
+    &--blue
+      background: #2378FC
+      margin-bottom: 30px
+    &--light-blue
+      background: #30BCC9
+      margin-bottom: 30px
+    &--yellow
+      background: #FFC41E
+    &--red
+      background: #F6404F
+    &__title
+      margin-top: 0
+      margin-bottom: 15px
+      font-weight: 500
+      font-size: 21px
+      line-height: 130%
+      letter-spacing: -0.01em
+.about
+  display: flex
+  align-items: center
+  &__text
+    font-size: 16px
+    line-height: 135%
+    color: $light
+    margin-right: 10px
+
