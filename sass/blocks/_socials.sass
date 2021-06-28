@@ -1,0 +1,29 @@
+.social
+  background: $blue
+.socials
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  padding: 75px 0
+  color: $light
+  &-title
+    margin-top: 0
+    margin-bottom: 30px
+    font-weight: 500
+    font-size: 30px
+    line-height: 130%
+    letter-spacing: -0.01em
+  &-list
+    list-style: none
+    padding: 0
+    margin: 0
+    &__item:not(:last-child)
+      margin-bottom: 15px
+    &__link
+      font-size: 16px
+      line-height: 135%
+      color: $light
+      transition: color 0.2s linear
+      &:hover
+        color: $gold
+        text-decoration: underline
