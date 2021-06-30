@@ -1,0 +1,62 @@
+.section-footer
+  background: $blue
+.footer
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: flex-start
+  padding: 75px 0
+  color: $light 
+  &-item
+    flex-basis: 25%
+    margin-bottom: 40px
+  &-title
+    margin-top: 0
+    margin-bottom: 20px
+    font-weight: 500
+    font-size: 21px
+    line-height: 130%
+    letter-spacing: -0.01em
+  &-list
+    list-style: none
+    padding: 0
+    margin: 0
+    &__item:not(:last-child)
+      margin-bottom: 15px
+    &__link
+      font-size: 14px
+      line-height: 135%
+      color: $footer-tx
+      transition: color 0.2s linear
+      &:hover
+        color: $gold
+        text-decoration: underline
+  &__follow-text
+    margin: 0
+    margin-bottom: 25px
+    max-width: 255px
+    font-size: 14px
+    line-height: 135%
+    color: $footer-tx
+  &-socials
+    display: flex
+    align-items: center
+    max-width: 220px
+    justify-content: space-between
+    &__link
+      text-align: center
+      min-width: 25px
+      max-height: 25px
+  &-form
+    display: flex
+    align-items: center
+    max-width: 225px
+    &__input
+      width: 225px
+      position: relative
+      left: 0
+      top: 0
+    &__button
+      position: absolute
+      right: 0
+      top: 0
