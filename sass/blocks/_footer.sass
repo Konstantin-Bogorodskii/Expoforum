@@ -10,6 +10,8 @@
   &-item
     flex-basis: 25%
     margin-bottom: 40px
+    &:nth-last-child(-n+4)
+      margin-bottom: 0
   &-title
     margin-top: 0
     margin-bottom: 20px
@@ -47,16 +49,29 @@
       text-align: center
       min-width: 25px
       max-height: 25px
+      
   &-form
     display: flex
-    align-items: center
-    max-width: 225px
+    position: relative
+    overflow: hidden
+    height: 40px
+    max-width: 255px
     &__input
-      width: 225px
-      position: relative
-      left: 0
-      top: 0
+      width: 255px
+      height: 100%
+      padding-left: 20px
+      padding-right: 45px
+      background: $light
+      border: none
+      font-size: 12px
+      line-height: 135%
+      color: #9C9C9C
     &__button
       position: absolute
-      right: 0
       top: 0
+      right: 0
+      height: 100%
+      width: 40px
+      border: none
+      background: $red
+      
