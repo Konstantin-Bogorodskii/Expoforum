@@ -44,7 +44,7 @@
       display: none
     &-main
       flex-direction: column
-      padding-top: 100px
+      padding-top: 12%
       padding-bottom: 50px
       padding-left: 5%
       padding-right: 5%
@@ -84,16 +84,19 @@
         margin-bottom: 20px
     &-title
       margin-bottom: 20px
-      font-size: 18px
-      line-height: 100%
+      font-size: 21px
+      line-height: 130%
     &-list
       &__link
         font-size: 14px
         line-height: 100%
   .socials
-    justify-content: space-around
+    justify-content: space-between
+    padding-left: 5%
+    padding-right: 5%
     &-item
-      flex-basis: 40%
+      max-width: 270px
+      flex: 1 1 48%
       margin-bottom: 20px
     &-title
       margin-bottom: 20px
@@ -107,20 +110,69 @@
     flex-direction: column
     padding-left: 5%
     padding-right: 5%
-
-
-
-
+    &-card
+      max-width: 100%
+    &-left
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      max-width: 100%
+      &__img
+        margin-bottom: 30px
+        flex-basis: 48%
+  .about
+    &__title
+      font-size: 18px
+      line-height: 115%
+    &__all
+      &-link
+        font-size: 16px
+        line-height: 115%
 
 @media (max-width: 768px)
-  //  &-description
-  //     &__title
-  //       font-weight: bold
-  //       font-size: 54px
-  //       line-height: 140%
-  //       text-transform: uppercase
-  //     &__text
-  //       max-width: 370px
-  //       font-size: 20px
-  //       line-height: 135%
-  
+  .socials
+    justify-content: space-around
+    &-item
+      flex: 0 0 48%
+      margin-bottom: 15px
+    &-title
+      margin-bottom: 15px
+      font-size: 20px
+      line-height: 110%
+    &-list
+      &__link
+        font-size: 14px
+        line-height: 115%
+  .footer
+    justify-content: space-between
+    align-items: center
+    padding-left: 5%
+    padding-right: 5%
+    &-item
+      flex: 0 1 48%
+      margin-bottom: 15px
+      &:nth-last-child(-n+4)
+        margin-bottom: 20px
+    &-title
+      margin-bottom: 15px
+      font-size: 16px
+      line-height: 100%
+    &-list
+      &__link
+        font-size: 13px
+        line-height: 100%
+
+@media (max-width: 540px)
+  .header
+    &-description
+      &__title
+        font-size: 46px
+        line-height: 120%
+      &__text
+        max-width: 370px
+        font-size: 18px
+        line-height: 125%
+    &-cards
+      flex-direction: column
+    &-card
+      max-width: 250px

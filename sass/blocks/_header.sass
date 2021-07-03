@@ -66,26 +66,29 @@
       line-height: 140%
   &-cards
     display: flex
-    align-items: center
     justify-content: space-between
     flex-wrap: wrap
     max-width: 540px
     &--pt-110
       padding-top: 140px
   &-card
-    max-width: 255px
-    padding: 30px 0 30px 40px
+    display: flex
+    flex-direction: column
+    max-width: calc(50% - 10px);
+    padding: 6% 0 6% 7%
+    margin-bottom: 30px
+    &__about
+      margin-top: 15px
     &--blue
       background: $blue
-      margin-bottom: 30px
     &--light-blue
       background: #30BCC9
-      margin-bottom: 30px
     &--yellow
       background: $gold
     &--red
       background: #F6404F
     &__title
+      flex-grow: 1
       margin-top: 0
       margin-bottom: 15px
       font-weight: 500
