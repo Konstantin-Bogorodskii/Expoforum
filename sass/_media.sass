@@ -16,9 +16,9 @@
         line-height: 115%
     &-buttons
       min-width: 140px
-  .events
-    &__main
-      justify-content: space-around
+  // .events
+  //   &__main
+  //     justify-content: space-around
   .about
     padding-left: 2%
     padding-right: 2%
@@ -29,7 +29,7 @@
       flex-basis: 55%
   .footer
     &-item
-      flex-basis: 24%
+      flex-basis: 23%
   .socials
     &-item
       flex-basis: 21%
@@ -61,6 +61,10 @@
         max-width: 370px
         font-size: 20px
         line-height: 135%
+  .events
+    &-card
+      width: 50%
+  
   .menu
     &-btn
       width: 20px
@@ -82,6 +86,8 @@
       margin-bottom: 20px
       &:nth-last-child(-n+4)
         margin-bottom: 20px
+    &-socials
+      max-width: 180px
     &-title
       margin-bottom: 20px
       font-size: 21px
@@ -144,15 +150,15 @@
         font-size: 14px
         line-height: 115%
   .footer
-    justify-content: space-between
-    align-items: center
-    padding-left: 5%
-    padding-right: 5%
     &-item
-      flex: 0 1 48%
-      margin-bottom: 15px
-      &:nth-last-child(-n+4)
+      flex-basis: 44%
+    &-socials
+      justify-content: flex-start
+      flex-wrap: wrap
+      max-width: 120px
+      &__link
         margin-bottom: 20px
+        flex-basis: 48%
     &-title
       margin-bottom: 15px
       font-size: 16px
@@ -161,18 +167,84 @@
       &__link
         font-size: 13px
         line-height: 100%
+  .news
+    align-items: center
+    padding: 40px 0 
+   
+    &-right
+      &__about
+        margin-top: 30px
+        margin-bottom: 30px
+    &-left
+      flex-direction: column
+    &-card
+      max-width: 450px
+      &__img
+        display: none
+      &__text
+        font-size: 18px
+        line-height: 115%
+  
 
-@media (max-width: 540px)
+@media (max-width: 576px)
   .header
+    &-main
+      align-items: center
     &-description
       &__title
-        font-size: 46px
-        line-height: 120%
+        font-size: 33px
+        line-height: 100%
+        margin-bottom: 15px
       &__text
-        max-width: 370px
+        max-width: 250px
         font-size: 18px
-        line-height: 125%
+        line-height: 110%
+        margin-bottom: 15px
     &-cards
       flex-direction: column
     &-card
       max-width: 250px
+      padding: 5% 0 5% 5%
+      min-height: 120px
+      &__title
+        font-size: 20px
+      &__about
+        margin-top: 10px
+  .socials
+    flex-direction: column
+    align-items: flex-start
+    &-item
+      min-width: 250px
+      margin: 0 auto 20px
+    &-title
+      margin-bottom: 15px
+      font-size: 20px
+      line-height: 110%
+    &-list
+      &__link
+        font-size: 14px
+        line-height: 110%
+  .events
+    &__main
+      flex-direction: column
+      align-items: center
+    &-card
+      width: 100%
+    &__about
+      flex-direction: column
+      align-items: flex-start
+      margin: 0 auto
+  .about
+    &__title
+      &--mb-7
+        font-size: 16px
+        margin-bottom: 7px
+  .footer
+    flex-direction: column
+    align-items: center
+    &-item
+      min-width: 250px
+      margin: 0 auto
+      margin-bottom: 20px
+      
+   
