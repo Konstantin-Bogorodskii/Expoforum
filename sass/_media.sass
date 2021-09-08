@@ -38,9 +38,7 @@
   .container
     max-width: 760px
   .header
-    &-nav
-      display: none
-    &-buttons
+    &__content
       display: none
     &-main
       flex-direction: column
@@ -67,6 +65,9 @@
   
   .menu
     &-btn
+      position: absolute
+      right: 30px
+      z-index: 10000
       width: 20px
       height: 16px
       border: none
@@ -103,11 +104,12 @@
     &-item
       max-width: 270px
       flex: 1 1 48%
-      margin-bottom: 20px
+      margin-bottom: 30px
     &-title
       margin-bottom: 20px
       font-size: 25px
       line-height: 110%
+      color: $gold
     &-list
       &__link
         font-size: 14px
